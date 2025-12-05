@@ -23,7 +23,8 @@ generate-concepts-usagi-input() {
 
 apply-sqlmesh-plan() {
   echo "Running SQLMesh plan..."
-  sqlmesh plan --no-prompts --auto-apply
+  sqlmesh plan --no-prompts --auto-apply --restate-model '*'
+#  sqlmesh plan --no-prompts --auto-apply
   echo "SQLMesh plan completed."
 }
 
