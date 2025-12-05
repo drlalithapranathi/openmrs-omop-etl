@@ -136,6 +136,7 @@ services:
 
 volumes:
   db-data: ~
+  db-data2: ~
   postgres_data: ~
   jdbc-drivers-data: ~
   cdm-postprocessing-data: ~

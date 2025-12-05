@@ -240,6 +240,21 @@ docker compose run achilles
 - ✅ Produces results in the Achilles_results and Achilles_analysis tables
 - ✅ Prepares your OMOP CDM for use with the web-based Atlas UI
 
+## 🏥 Optional: Run with OpenMRS Instance
+If you want to have an OpenMRS instance up and running alongside the ETL pipeline, you can use the `docker-compose.openmrs.yml` override file.
+
+### To start with OpenMRS:
+```bash
+docker compose -f docker-compose.yml -f docker-compose.openmrs.yml up
+```
+
+This will launch an OpenMRS instance accessible at:
+👉 http://localhost/
+
+This is useful if you want to interact with OpenMRS directly, add test data, or verify the source data while running the ETL pipeline.
+
+---
+
 ## 🌀 Optional: Run with Airflow
 You can run this project with Apache Airflow to visually orchestrate and schedule your data pipeline.
 
